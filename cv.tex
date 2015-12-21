@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{moderncv}
 \moderncvstyle{classic}
-\moderncvcolor{grey}
+\moderncvcolor{blue}
 \renewcommand{\familydefault}{\sfdefault}
 \nopagenumbers{}
 \usepackage[utf8]{inputenc}
@@ -8,42 +8,67 @@
 
 \geometry{a4paper,body={160mm,250mm},left=25mm,top=25mm,headheight=7mm,headsep=4mm,marginparsep=4mm,marginparwidth=21mm}
 
+
 \firstname{Christian}
 \familyname{Juckler}
-\address{clos des Duges, 9}{6032 Mont-sur-Marchienne}
+\title{Administrateur réseau}
+\address{Clos des Duges, 9}{6032 Mont-sur-Marchienne}
 \mobile{+32~498~258~211}
 \email{c.juckler@gmail.com}
+\social[linkedin]{Christian Juckler}
+\extrainfo{Né le 04 octobre 1990 à Charleroi \\ Permis B depuis 2008}
 
 \begin{document}
 \makecvtitle
 \section{Expériences Professionnelles}
-\cventry{Février 2015 - Mai 2015}{Stagiaire}{Matias Consulting Group (M.C.G.)}{Louvain-la-Neuve}{Stages de fin d'études}{Installation et configuration d'un laboratoire de test}
+\cventry{Février 2015 - Mai 2015}{Stagiaire}{Matias Consulting Group (M.C.G.)}{Louvain-la-Neuve}{Stages de fin d'études}{Installation et configuration de serveur HP dans un environnement de test :
+\begin{itemize}
+\item[-] Montage des serveurs dans un rack
+\item[-] Nettoyage des disques durs
+\item[-] Installation et configuration des systèmes d'exploitation
+\item[-] Mise en réseau des serveurs (EtherChannel, VLAN)
+\item[-] Création des templates des machines virtuelles en VMWare et en Hyper-V
+\end{itemize}
+}
 \cventry{\'Eté 2014}{\'Etudiant}{UCB}{Braine l'Alleud}{}{Tâches administratives et qualification}
 \cventry{\'Eté 2007 et 2006}{\'Etudiant}{STMB}{Nivelles}{}{Entretien des installations de commerces de divers enseignes}
 
 \section{Education}
 \cventry{2012-2015}{Bachelier en informatique et systèmes}{EPHEC}{Louvain-la-Neuve}{Diplomé - Grande Distinction}{Finalité technologie de l'informatique}
-\cventry{2011-2012}{Bachelier en sciences physqiues}{Université Catholique de Louvain}{Louvain-la-Neuve}{1er année}{}
-\cventry{2009-2011}{Bachelier en sciences appliquées, orientation ingénieur civil}{Université Catholique de Louvain}{Louvain-la-Neuve}{1er année}{}
-\cventry{2008-2009}{7e année en mathématiques}{Lucée Martin V}{Louvain-la-Neuve}{}{}
-\cventry{2002-2008}{Diplôme de l'enseignement général (CESS)}{Institut Notre Dame}{Charleroi}{}{Finalité math-sciences}
-
-\section{Langues}
-\cvitem{Français}{Langue maternelle}
-\cvitem{Anglais}{Conversation et compréhension}
 
 \section{Informatique}
-\cvitem{Programmation}{Pascal, C, Java, C\#}
+\cvitem{Langage}{Pascal, C, Java, C\#, Python}
 \cvitem{Web}{HTML, CSS, php, (My)Sql}
 \cvitem{Réseaux}{Cisco (Switch \& Routeur), Juniper (Firewall)}
 \cvitem{Systèmes}{Windows Server 2012R2, Client OS X et Windows}
 \cvitem{Logiciels}{Outlook, Office, Exchange}
 \cvitem{Virtualisation}{Hyper-V, VMWare Fusion}
 
+\section{Langues}
+\cvitem{Français}{Langue maternelle}
+\cvitem{Anglais}{Conversation et compréhension}
+
 \section{Loisirs}
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 \cvlistitem{Tennis}
 \cvlistitem{Roman de science-fiction et de fantasy}
 
-\section{Renseignements Complémentaires}
-\cvlistitem{Permis B}
+\clearpage
+
+\recipient{Logicaltic SPRL}{Chaussée de Bruxelles 4 bte 3\\1470 Genappe\\Belgique} % Letter recipient
+\date{\today} % Letter date
+\opening{Messieurs Englebert et Usai ,} % Opening greeting
+\closing{Je reste à votre disposition pour convenir d'un rendez-vous afin de vous démontrer ma motivation et mes compétences.} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+Après avoir obtenu mon Bachelier en informatique et systèmes, je cherche à agrandir mon expérience en système. 
+
+Pendant mon stage de fin d'études, j'ai appris à gérer un ensemble de serveur tant d'un point de vue système, que réseau.  
+
+Mon travail de fin d'études a porté sur un comparatif des solutions VPN. 
+
+\makeletterclosing % Print letter signature
+
 \end{document}
